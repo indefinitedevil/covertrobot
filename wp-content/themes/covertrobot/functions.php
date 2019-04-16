@@ -2,8 +2,9 @@
 
 function covertrobot_enqueue_styles() {
     wp_dequeue_style('vertex-google-lato-font');
+    wp_deregister_style('vertex');
     wp_enqueue_style('covertrobot-google-rajdhani-font', 'https://fonts.googleapis.com/css?family=Rajdhani:300,400|Roboto:400,500');
-    wp_enqueue_style('vertex', get_template_directory_uri() . '/style.css');
+    wp_register_style('vertex', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('child-style', get_stylesheet_uri(), ['vertex']);
 }
 
