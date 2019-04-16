@@ -1,0 +1,41 @@
+/*
+Theme Name: Covert Robot
+Theme URI: https://covertrobot.co.uk
+Author: Yoda
+Author URI: https://drunkoncaffeine.com
+Description: Vertex child theme
+Template: vertex
+Version: 1.0.0
+License: GNU General Public License version v3
+License URI: http://www.gnu.org/licenses/gpl.html
+Text Domain: vertex
+Tags: Blog, Portfolio, Photography, featured-images, custom-logo,one-column, two-columns, three-columns, right-sidebar, theme-options, custom-background, custom-menu
+*/
+
+.logo a {
+  font-family: Rajdhani, Roboto, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+body, p {
+  font-family: Roboto, sans-serif;
+}
+
+.head-copyright, p.credits {
+  font-size: 12px;
+}
+.head-nav::before {
+  content: ' ';
+  display: block;
+  margin: 0 auto 10px;
+  width: 50%;
+  height: 1px;
+  background-color: #444;
+}
+
+@media only screen and (max-width: 960px) {
+  .head-nav {
+    display: block;
+  }
+}
