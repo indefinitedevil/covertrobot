@@ -7,7 +7,7 @@ function covertrobot_enqueue_styles() {
     wp_enqueue_style('child-style', get_stylesheet_uri(), ['vertex']);
 }
 
-add_action('wp_enqueue_scripts', 'covertrobot_enqueue_styles');
+add_action('wp_enqueue_scripts', 'covertrobot_enqueue_styles', 20);
 
 /**
  * Default copyright text.
