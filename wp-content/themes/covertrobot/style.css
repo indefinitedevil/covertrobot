@@ -18,7 +18,8 @@ Tags: Blog, Portfolio, Photography, featured-images, custom-logo,one-column, two
   text-transform: uppercase;
 }
 
-body, p {
+body, p,
+.post-content h3 {
   font-family: Roboto, sans-serif;
 }
 
@@ -38,4 +39,13 @@ body, p {
   .head-nav {
     display: block;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+.post-content h3 {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
 }
